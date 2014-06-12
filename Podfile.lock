@@ -1,10 +1,14 @@
 PODS:
-  - RuntimeHelpers (0.0.4)
+  - FMRuntimeHelpers (0.0.5)
 
 DEPENDENCIES:
-  - RuntimeHelpers
+  - FMRuntimeHelpers (from `https://github.com/agustindc-rga/FMRuntimeHelpers.git`)
+
+EXTERNAL SOURCES:
+  FMRuntimeHelpers:
+    :git: https://github.com/agustindc-rga/FMRuntimeHelpers.git
 
 SPEC CHECKSUMS:
-  RuntimeHelpers: 06726ff83f7f30aba36ae569d90feff37a28bef7
+  FMRuntimeHelpers: 967275ae023eae11dce0f992c8876995ee06ed06
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.33.1

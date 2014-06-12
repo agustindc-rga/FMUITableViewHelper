@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
   s.requires_arc = true
-  s.dependency 'RuntimeHelpers'
+  s.dependency 'FMRuntimeHelpers', :git => 'https://github.com/agustindc-rga/FMRuntimeHelpers.git'
 end
