@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 UITableViewHelper. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import "FMTableViewCell.h"
 
-@interface TableViewCell ()
+@interface FMTableViewCell ()
 
 @property (nonatomic, strong) NSString *identifier;
 
 @end
 
-@implementation TableViewCell
+@implementation FMTableViewCell
 
 @synthesize object = _object;
 

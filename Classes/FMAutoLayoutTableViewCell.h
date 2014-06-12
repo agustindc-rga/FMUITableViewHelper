@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Fernando Mazzon. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import "FMTableViewCell.h"
 
-@interface AutoLayoutTableViewCell : TableViewCell
+@interface FMAutoLayoutTableViewCell : FMTableViewCell
 
 /**
  Returns whether this is an offscreen cell, used for height calculation only. You can make optimizations based off this flag
@@ -21,6 +21,6 @@
  Provides means to get the offscreen cell that is used for the height computation, in case you want to roll your own
  computation for some reason. (E.G. autolayout being unncessarily slow).
  */
-+ (AutoLayoutTableViewCell *)offscreenCellForIdentifier:(NSString *)identifier tableView:(UITableView *)tableView;
++ (FMAutoLayoutTableViewCell *)offscreenCellForIdentifier:(NSString *)identifier tableView:(UITableView *)tableView;
 
 @end

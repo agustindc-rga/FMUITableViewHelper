@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Fernando Mazzon. All rights reserved.
 //
 
-#import "TableViewCell.h"
-#import "AutoLayoutTableViewCell.h"
-#import "TableViewCellProtocol.h"
-#import "UITableView+UITableViewHelper.h"
+#import "FMTableViewCell.h"
+#import "FMAutoLayoutTableViewCell.h"
+#import "FMTableViewCellProtocol.h"
+#import "UITableView+FMUITableViewHelper.h"

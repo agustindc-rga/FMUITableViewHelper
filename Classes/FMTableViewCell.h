@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 UITableViewHelper. All rights reserved.
 //
 
-#import "TableViewCellProtocol.h"
+#import "FMTableViewCellProtocol.h"
 
-@interface TableViewCell : UITableViewCell<TableViewCellProtocol>
+@interface FMTableViewCell : UITableViewCell<FMTableViewCellProtocol>
 
 /**
  If YES, TableViewCell will accelerate the creation of new cells using UINib. Beware UINib has the limitation that

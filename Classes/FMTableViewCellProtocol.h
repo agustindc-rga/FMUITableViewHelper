@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 UITableViewHelper. All rights reserved.
 //
 
-@protocol TableViewCellProtocol <NSObject>
+@protocol FMTableViewCellProtocol <NSObject>
 
 /**
  provided for backwards compatibility.

@@ -6,22 +6,22 @@
 //  Copyright (c) 2014 Fernando Mazzon. All rights reserved.
 //
 
-#import "AutoLayoutTableViewCell.h"
-#import <RuntimeHelpers/RuntimeHelpers.h>
+#import "FMAutoLayoutTableViewCell.h"
+#import <FMRuntimeHelpers/FMRuntimeHelpers.h>
 
 static char kOffscreenCellKey;
 
-@interface AutoLayoutTableViewCell ()
+@interface FMAutoLayoutTableViewCell ()
 
 @property (nonatomic, assign) BOOL offscreen;
 
 @end
 
-@implementation AutoLayoutTableViewCell
+@implementation FMAutoLayoutTableViewCell
 
 #pragma mark - AutoLayoutTableViewCell
 
-+ (AutoLayoutTableViewCell *)offscreenCellForIdentifier:(NSString *)identifier tableView:(UITableView *)tableView
++ (FMAutoLayoutTableViewCell *)offscreenCellForIdentifier:(NSString *)identifier tableView:(UITableView *)tableView
 {
     NSMutableDictionary *offscreenCellDictionary = [(id)tableView associatedObjectForKey:&kOffscreenCellKey orBlockResult:^id{
         return [NSMutableDictionary dictionary];
@@ -38,7 +38,7 @@ static char kOffscreenCellKey;
 
 + (CGFloat)heightForObject:(id)object inTableView:(UITableView *)tableView
 {
-    AutoLayoutTableViewCell *cell = [self offscreenCellForIdentifier:[self cellIdentifierForObject:object] tableView:tableView];
+    FMAutoLayoutTableViewCell *cell = [self offscreenCellForIdentifier:[self cellIdentifierForObject:object] tableView:tableView];
     
     [cell setObject:object];
     

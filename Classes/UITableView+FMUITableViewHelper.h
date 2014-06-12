@@ -6,23 +6,23 @@
 //  Copyright (c) 2012 UITableViewHelper. All rights reserved.
 //
 
-#import "TableViewCellProtocol.h"
+#import "FMTableViewCellProtocol.h"
 
-@interface UITableView (UITableViewHelper)
+@interface UITableView (FMUITableViewHelper)
 
 /**
   Dequeues or creates a new cell of the passed type. Can be used just if the cell class is associated with a single nib file
  */
-- (UITableViewCell<TableViewCellProtocol> *)cellOfClass:(Class<TableViewCellProtocol>)class;
+- (UITableViewCell<FMTableViewCellProtocol> *)cellOfClass:(Class<FMTableViewCellProtocol>)class;
 
 /**
  Dequeues or creates a new cell of the passed type that is able to represent the passed object (it is used to pick the right nib file)
  */
-- (UITableViewCell<TableViewCellProtocol> *)cellOfClass:(Class<TableViewCellProtocol>)class forObject:(id)object;
+- (UITableViewCell<FMTableViewCellProtocol> *)cellOfClass:(Class<FMTableViewCellProtocol>)class forObject:(id)object;
 
 /**
  Dequeues or creates a new cell of the passed type and then sets it up the passed object
  */
-- (UITableViewCell<TableViewCellProtocol> *)cellOfClass:(Class<TableViewCellProtocol>)class withObject:(id)object;
+- (UITableViewCell<FMTableViewCellProtocol> *)cellOfClass:(Class<FMTableViewCellProtocol>)class withObject:(id)object;
 
 @end
